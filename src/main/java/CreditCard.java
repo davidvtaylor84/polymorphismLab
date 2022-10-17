@@ -9,8 +9,10 @@ public class CreditCard extends PaymentCard {
 
     @Override
     public void charge(double purchaseAmount) {
-        this.setTransactionLogs(purchaseAmount);
-        availCredit -= purchaseAmount;
+        double percentageAdded = purchaseAmount * 0.05;
+        double total = percentageAdded + purchaseAmount;
+        this.setTransactionLogs(total);
+        availCredit -= total;
     }
 
     public double getAvailCredit() {

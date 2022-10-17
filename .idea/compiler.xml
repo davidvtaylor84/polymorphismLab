@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="poly_lab_dave" />
+        <module name="polymorphismLab" />
       </profile>
     </annotationProcessing>
   </component>

@@ -37,4 +37,10 @@ public class DebitCardTest {
         assertEquals(123456, debitCard.getSortCode());
     }
 
+    @Test
+    public void canLogTransactions(){
+        debitCard.charge(20.00);
+        assertEquals(1, debitCard.transCount());
+    }
+
 }

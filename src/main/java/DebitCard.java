@@ -12,6 +12,7 @@ public class DebitCard extends PaymentCard {
 
     @Override
     public void charge(double purchaseAmount) {
+        this.setTransactionLogs(purchaseAmount);
     }
 
     public int getAccNumber(){

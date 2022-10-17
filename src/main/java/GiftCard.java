@@ -1,8 +1,8 @@
 public class GiftCard implements IChargeable {
 
-    private int balance;
+    private double balance;
 
-    public GiftCard(int balance){
+    public GiftCard(double balance){
         this.balance = balance;
     }
 
@@ -10,5 +10,10 @@ public class GiftCard implements IChargeable {
     @Override
     public void charge(double purchaseAmount) {
         balance -= purchaseAmount;
+    }
+
+
+    public double getBalance() {
+        return balance;
     }
 }

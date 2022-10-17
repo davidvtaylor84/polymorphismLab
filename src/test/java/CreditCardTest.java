@@ -39,6 +39,18 @@ public class CreditCardTest {
         assertEquals(1, creditCard.transCount());
     }
 
+    @Test
+    public void canReduceCredit(){
+        creditCard.charge(25.50);
+        assertEquals(373.72, creditCard.getAvailCredit(), 0.1);
+    }
+
+    @Test
+    public void canCalculateWithPercentageAdded(){
+         creditCard.charge(25.50);
+         assertEquals(373.72, creditCard.getAvailCredit(), 0.1);
+    }
+
 
 
 }
